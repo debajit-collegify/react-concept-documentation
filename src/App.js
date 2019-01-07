@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Contact from './component/contact';
 import Header from "./component/header";
-/*import './App.css';*/
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   render() {
@@ -10,13 +11,15 @@ class App extends Component {
 
     return(
          <div className="App">
-        <h1>React documentation examples</h1>
-           <h3>Hello {name.toUpperCase()}</h3>
-           <Header branding="Contact Manager" />
-           <Contact name="Debajit Basu" Email="Debajit@collegify.com" Phone="8888-2222-55" />
-           <Contact name="Pratik" Email="Pratick@collegify.com" Phone="7777-555-99" />
 
-      </div>
+            <div className="container">
+                <h1>React documentation examples</h1>
+                <h3>Hello {name.toUpperCase()}</h3>
+                <Header branding="Contact Manager" />
+                <Contact name="Debajit Basu" Email="Debajit@collegify.com" Phone="8888-2222-55" />
+                <Contact name="Pratik" Email="Pratick@collegify.com" Phone="7777-555-99" />
+            </div>
+         </div>
     );
 
     /*return React.createElement(

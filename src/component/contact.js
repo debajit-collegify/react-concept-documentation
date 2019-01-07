@@ -8,11 +8,11 @@ class Contact extends Component {
         const { name, Email , Phone} = this.props;
 
         return(
-            <div>
+            <div className="card card-body mb-3">
                 <h4 style={{ color: 'blue' }}>{name.toUpperCase()}</h4>
-                <ul>
-                    <li>Email: {Email}</li>
-                    <li>Phone: {Phone}</li>
+                <ul className="list-group">
+                    <li className="list-group-item">Email: {Email}</li>
+                    <li className="list-group-item">Phone: {Phone}</li>
                 </ul>
 
             </div>
